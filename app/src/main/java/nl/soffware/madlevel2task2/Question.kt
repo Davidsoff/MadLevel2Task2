@@ -2,8 +2,11 @@ package nl.soffware.madlevel2task2
 
 class Question(
     var question: String,
-    var answer: Boolean
+    var answer: Boolean,
+    var explanation: String
 ) {
+
+
     companion object {
         val QUESTIONS = arrayOf(
             "A 'val' and 'var' are the same,",
@@ -16,6 +19,12 @@ class Question(
             false,
             true,
             true
+        )
+        val explanations = arrayOf(
+            "",
+            "",
+            "",
+            ""
         )
     }
 }
