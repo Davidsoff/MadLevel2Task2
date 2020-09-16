@@ -68,6 +68,12 @@ class MainActivity : AppCompatActivity() {
                     questionAdapter.notifyDataSetChanged()
                 } else {
                     Snackbar.make(rvStatements, question.explanation, Snackbar.LENGTH_SHORT).show()
+                    questionAdapter.notifyDataSetChanged()
+                }
+
+                if(questions.size <= 0){
+                    addData()
+                    Snackbar.make(rvStatements, getText(R.string.winner), Snackbar.LENGTH_LONG).show()
                 }
             }
         }

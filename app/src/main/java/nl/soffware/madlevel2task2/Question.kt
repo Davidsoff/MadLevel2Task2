@@ -12,7 +12,7 @@ class Question(
             "A 'val' and 'var' are the same,",
             "Mobile Application Development grants 12 EC.",
             "A Unit in Kotlin corresponds to a void in Java.",
-            "In Kotlin ' When' replaces the 'switch' operator in Java."
+            "In Kotlin 'When' replaces the 'switch' operator in Java."
         )
         val answers = arrayOf(
             false,
@@ -21,10 +21,10 @@ class Question(
             true
         )
         val explanations = arrayOf(
-            "",
-            "",
-            "",
-            ""
+            "Val is immutable while var is mutable",
+            "MAD grants 8 EC",
+            "A Unit DOES correspond to a void in Java.",
+            "'When' DOES replace the 'switch' operator"
         )
     }
 }
